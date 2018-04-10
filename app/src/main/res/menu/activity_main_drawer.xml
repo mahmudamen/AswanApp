@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+
+        >
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_new_releases_black_24dp"
+            android:title="اخبار المدينة" />
+        <item
+            android:id="@+id/nav_newss"
+            android:icon="@mipmap/if_mapmarkerchequeredflagleftpink_73029"
+            android:title="اعلانات المدينة" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="صور" />
+        <item
+            android:id="@+id/nav_waterfront"
+            android:icon="@mipmap/if_untitled04_536302"
+            android:title="الشريط النهري" />
+        <item
+            android:id="@+id/nav_house"
+            android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="الاسكان الاجتماعي" />
+        <item
+            android:id="@+id/nav_pro"
+            android:icon="@drawable/ic_hourglass_full_black_24dp"
+            android:title="مشروعات" />
+    </group>
+
+    <item android:title="اتصل بنا">
+        <menu>
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_map_black_24dp"
+                android:title="خريطة المدينة" />
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/projectman"
+                android:title="تسجيل الدخول" />
+            <item
+                android:id="@+id/nav_fb"
+                android:icon="@drawable/com_facebook_button_login_logo"
+                android:title=" الصفحة الرسمية فيس بوك" />
+        </menu>
+    </item>
+
+</menu>

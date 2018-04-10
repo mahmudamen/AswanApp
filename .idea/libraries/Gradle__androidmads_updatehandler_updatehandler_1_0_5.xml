@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: androidmads.updatehandler:updatehandler-1.0.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/updatehandler-1.0.5.aar/7d63449fab5af8eca765b13a1c43625f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/updatehandler-1.0.5.aar/7d63449fab5af8eca765b13a1c43625f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidmads.updatehandler/updatehandler/1.0.5/1994790dbeadbf105fff0fbc576f9df41e3ca403/updatehandler-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

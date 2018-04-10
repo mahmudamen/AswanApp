@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.newaswan.seven.ProjectActivity">
+    <item
+        android:id="@+id/action_like"
+        android:orderInCategory="100"
+        android:title="حفظ الصورة"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_fav"
+        android:orderInCategory="100"
+        android:title="مفضلة"
+        app:showAsAction="never" />
+</menu>

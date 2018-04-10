@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="@color/com_facebook_button_background_color_focused"
+    android:theme="@style/FullscreenTheme"
+    tools:context=".Splash">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+
+        android:layout_marginTop="80dp"
+        android:src="@drawable/lasticon"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:text="مرحبا بكم في  اسوان الجديدة"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+
+        android:textColor="#49276e"
+
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="bottom|center"
+        tools:textDirection="rtl"
+        tools:theme="@style/Base.DialogWindowTitle.AppCompat" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hi"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="5dp"
+        android:foreground="@android:color/transparent"
+        android:indeterminateDrawable="@drawable/circular"
+        android:max="100"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:padding="5dp"
+        android:progress="10"
+        app:layout_anchor="@+id/hi"
+        app:layout_anchorGravity="bottom|center" />
+</android.support.design.widget.CoordinatorLayout>

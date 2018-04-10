@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <GridLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:alignmentMode="alignBounds"
+            android:background="@android:color/transparent"
+            android:columnCount="3"
+
+            android:drawingCacheQuality="auto"
+            android:fadingEdge="horizontal"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            android:stretchMode="columnWidth"
+            android:textAlignment="gravity">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/button5"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@color/float_transparent"
+                android:elevation="0dp"
+                android:ellipsize="start"
+                android:requiresFadingEdge="horizontal|vertical"
+                android:src="@drawable/if_monitor"
+                android:text="الشاشة "
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:onClick="onClick"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/button1"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@color/float_transparent"
+                android:src="@drawable/if_home"
+                android:text="أخبار "
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textStyle="bold"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@color/float_transparent"
+                android:src="@drawable/if_diagram"
+                android:text="الشريط السياحي"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textStyle="bold"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_horizontal"
+                android:background="@color/float_transparent"
+                android:src="@drawable/if_industry"
+                android:text="المشروعات"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textStyle="bold"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/button4"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@color/float_transparent"
+                android:src="@drawable/if_company"
+                android:text="الاسكان الاجتماعي"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textStyle="bold"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/button6"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@color/float_transparent"
+                android:src="@drawable/if_map"
+                android:text="خريطة"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textStyle="bold"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+        </GridLayout>
+
+    </LinearLayout>
+</FrameLayout>

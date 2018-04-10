@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#423752"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/main_orange_color"
+        android:backgroundTint="@color/main_orange_light_color"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:title="@string/app_name"
+            app:expandedTitleTextAppearance="@null"
+            app:contentScrim="#ff9900"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff9900"
+                android:fitsSystemWindows="true"
+                android:padding="12dp"
+                android:src="@drawable/lasticon"
+                app:layout_collapseMode="pin" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fadeScrollbars="true"
+                android:text="UserName"
+                android:textColor="@color/app_primary_mov" />
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:title="@string/app_name"
+                app:popupTheme="@style/AppTheme.AppBarOverlay"/>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_horizontal_ntb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/ntb_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:ntb_badge_bg_color="#49276e"
+        app:ntb_badge_gravity="top"
+        app:ntb_badge_position="left"
+        app:ntb_badge_size="12sp"
+        app:ntb_badge_title_color="#ff9900"
+        app:ntb_badge_use_typeface="true"
+        app:ntb_badged="true"
+        app:ntb_typeface="fonts/agency.ttf" />
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        fab:fab_colorNormal="#004336"
+        fab:fab_colorPressed="#005043"
+        fab:fab_colorRipple="#99FFFFFF"
+        fab:fab_shadowColor="#66000000"
+        fab:fab_showShadow="true"
+        fab:menu_animationDelayPerItem="5"
+        fab:menu_backgroundColor="#00ffffff"
+        fab:menu_fab_label="مرحبا"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        android:tint="@color/app_primary_orange"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="right"
+        fab:menu_labels_showAnimation="@anim/jump_to_down"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="true"
+        fab:menu_openDirection="down">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            fab:fab_label="خدمة العملاء"
+            android:tint="@color/app_primary_orange"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_white_24px"
+            fab:fab_label="خريطة المدينة"
+            android:tint="@color/app_primary_orange"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/app_primary_orange"
+            android:src="@drawable/ic_account_box_white_24px"
+            fab:fab_label="حسابي"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_first"
+        android:tint="#ff9900"
+        app:backgroundTint="#49276e" />
+
+</android.support.design.widget.CoordinatorLayout>

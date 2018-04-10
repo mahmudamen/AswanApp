@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.newaswan.seven">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lasticon"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true"
+        android:roundIcon="@drawable/lasticon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:icon,android:theme,android:label">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HorizontalNtbActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="AswanApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".BadgeIntentService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.newaswan.seven.BadgeIntentService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseBackgroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.newaswan.seven.FirebaseBackgroundService" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".StartFirebaseAtBoot" >
+            <intent-filter>
+                <action android:name="com.android.techtrainner" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Main4Activity"
+            android:label="فيس بوك"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HouseActivity"
+            android:label="الاسكان الاجتماعي"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PhotoActivity"
+            android:label="البوم صور المدينة"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FacebookActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="تسجيل الدخول"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SinginActivity"
+            android:label="تسجيل الدخول"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="حسابي"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NewsActivity"
+            android:label="اخبار المدينة"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WaterFront"
+            android:label="الشريط النهري "
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SalesActivity"
+            android:label="اعلانات المدينة "
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProjectActivity"
+            android:label="المشروعات "
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutMe"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".HorizontalNtbActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.HorizontalNtbActivity" />
+        </activity>
+
+        <activity
+            android:name=".Users"
+            android:label="العملاء"
+            android:parentActivityName=".ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.ChatActivity" />
+        </activity>
+
+        <activity
+            android:name=".Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CityActivity"
+            android:label="@string/title_activity_city"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newaswan.seven.MainActivity" />
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+    </application>
+
+</manifest>

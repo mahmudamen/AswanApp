@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "546396587993",
+    "firebase_url": "https://seven-1810b.firebaseio.com",
+    "project_id": "seven-1810b",
+    "storage_bucket": "seven-1810b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546396587993:android:203b4a8e8a720982",
+        "android_client_info": {
+          "package_name": "com.newaswan.seven"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546396587993-kuhmqrm0eimfa8cdtf705udnvvsmbpnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newaswan.seven",
+            "certificate_hash": "07e3a3170511577d9a2b37ecc262af0d8e8984ee"
+          }
+        },
+        {
+          "client_id": "546396587993-snn5tv94pcqeiklunaa1vuhun02pjjbo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newaswan.seven",
+            "certificate_hash": "81c7d032dc5bd690427c25a8b5ef5da75e77ee2b"
+          }
+        },
+        {
+          "client_id": "546396587993-p3pb8dlm2vt1i8mfre60pqj5ukv66f0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7u-KEvGD_uh06-Hi56Ueih3TUitUPjD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546396587993-p3pb8dlm2vt1i8mfre60pqj5ukv66f0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

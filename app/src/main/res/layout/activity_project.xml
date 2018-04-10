@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:padding="1dp"
+    android:layout_margin="1dp"
+    android:layout_height="match_parent"
+    android:background="#006699"
+    android:id="@+id/activity_photo"
+    tools:context="com.newaswan.seven.SalesActivity">
+    <android.support.v7.widget.RecyclerView
+        android:padding="1dp"
+        android:layout_margin="1dp"
+        android:background="#ffffff"
+        android:id="@+id/recycle"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        app:backgroundTint="@color/com_facebook_button_login_background_color"
+        app:srcCompat="@drawable/ic_refresh_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+</RelativeLayout>

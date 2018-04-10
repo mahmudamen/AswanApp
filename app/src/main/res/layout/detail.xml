@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layoutDirection="rtl"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_light_background"
+            android:layoutDirection="rtl"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="false"
+                android:layoutDirection="rtl"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_toLeftOf="@id/imageView"
+                android:gravity="top|right|fill_horizontal|center"
+                android:padding="1dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textDirection="rtl"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewShortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toLeftOf="@id/imageView"
+                android:hint="textViewShortDesc"
+                android:layoutDirection="rtl"
+                android:text=" "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#ff0011"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewShortDesc"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toLeftOf="@id/imageView"
+                android:layoutDirection="rtl"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text=" "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000a97"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewRating"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toLeftOf="@id/imageView"
+                android:layoutDirection="rtl"
+                android:text=" "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000a97"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

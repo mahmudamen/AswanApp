@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/float_transparent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layoutDirection="rtl"
+        android:layout_margin="1dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:layoutDirection="rtl"
+            android:padding="1dp">
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="top|fill_horizontal|center"
+                android:padding="1dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textDirection="rtl"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_below="@id/textViewTitle"
+                android:layoutDirection="rtl"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/textViewShortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:hint="textViewShortDesc"
+                android:layoutDirection="rtl"
+                android:text=" "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textViewLongDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewShortDesc"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:text=" "
+                android:textColor="#000000"
+                android:layoutDirection="rtl"
+                android:textSize="15sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            <TextView
+                android:id="@+id/textLiq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewLongDesc"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:textColor="#97000a"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text=" "
+                android:textSize="12sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="italic"
+                android:layoutDirection="rtl"/>
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textLiq"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+
+                android:layoutDirection="rtl"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text=" "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#ff0005"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textLiq"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_toLeftOf="@id/textViewRating"
+                android:layoutDirection="rtl"
+                android:text=" "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#ff000e"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>
+</LinearLayout>

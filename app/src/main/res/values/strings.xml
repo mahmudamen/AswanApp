@@ -1,0 +1,93 @@
+<resources>
+
+    <string name="title_activity_main">New Aswan App</string>
+
+        <style name="Theme.Transparent" parent="android:Theme">
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:backgroundDimEnabled">false</item>
+        </style>
+
+
+    <string name="action_settings">خدمة العملاء </string>
+    <string name="action_about">نبذة </string>
+
+
+    <string name="app_name">AswanApp</string>
+    <string name="title_activity_maps">خريطة المدينة</string>
+    <string name="default_notification_channel_id">noti</string>
+
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main7">Main7Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="facebook_app_id">561800487496918</string>
+    <string name="fb_login_protocol_scheme">fb561800487496918</string>
+    <string name="FACEBOOK_APP_ID">0</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">0</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="about">ar</string>
+    <string name="lorem_ipsum">اعلانات تجارية</string>
+    <string name="recyclerview_fab_example">خريطة المدينة</string>
+    <string name="floating_action_menu">Floating Action Menu</string>
+    <string name="lorem_ipsum_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ultricies risus. Integer nisi orci, lacinia sit amet mi in, mollis scelerisque purus. Nunc risus ligula, maximus eu orci a, facilisis dictum velit. Proin nec laoreet magna. Nulla ut sagittis lorem. Morbi id enim fermentum, semper diam et, tempus leo. Aliquam vel congue orci. Suspendisse potenti. Curabitur finibus diam augue, vel bibendum sapien ultrices non.</string>
+    <string name="navigation_drawer_open">Navigation open</string>
+    <string name="navigation_drawer_close">Navigation close</string>
+
+    <string-array name="examples">
+        <item>خريطة المدينة</item>
+        <item> خدمة العملاء </item>
+        <item>خدمة عملاء الاسكان الاجتماعي</item>
+        <item>مدرسة النيل</item>
+        <item>الاسكان الاجتماعي </item>
+        <item>مستشفي مجدي يعقوب</item>
+        <item> اعلانات طرح الاراضي  </item>
+        <item> مشروعات المدينة </item>
+        <item>معهد ازهري</item>
+        <item>مركز صحي حضري</item>
+        <item>تم افتتاح قسم شرطة بالمدينة</item>
+        <item>مدرسة لغات </item>
+        <item>ملاعب كرة قدم خماسي </item>
+        <item>مستشفي ووحدة اسعاف</item>
+        <item>مسجد 100 مصلي </item>
+        <item>مكتب بريد</item>
+        <item>تنفيذ وحدات الاسكان الاجتماعي  </item>
+    </string-array>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+
+    <string name="text">Squid blog crucifix Marfa, consectetur vero placeat mixtape. Non seitan sriracha eu, do Banksy fashion axe cred qui vegan delectus consequat Helvetica mollit. XOXO gluten-free disrupt, gastropub officia cliche chillwave hella pop-up. Fixie swag raw denim, YOLO craft beer assumenda occupy veniam photo booth pug consectetur next level Portland tote bag +1. Mlkshk PBR aliquip placeat Wes Anderson.</string>
+    <string name="title">My Description</string>
+    <string name="context_menu">Context menu</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_city">CityActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>

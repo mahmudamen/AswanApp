@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.carlonzo.stikkyheader:core-0.0.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core-0.0.3-SNAPSHOT.aar/03021a37019f4d4bd0afca2559e34727/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core-0.0.3-SNAPSHOT.aar/03021a37019f4d4bd0afca2559e34727/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.carlonzo.stikkyheader/core/0.0.3-SNAPSHOT/790b2e4c03aff178fc3117fa995dcfa84a8b2c99/core-0.0.3-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

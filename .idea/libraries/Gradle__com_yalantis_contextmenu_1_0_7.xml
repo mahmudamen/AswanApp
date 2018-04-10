@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yalantis:contextmenu-1.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/contextmenu-1.0.7.aar/e45d324994def7b075a07dbf17dba875/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/contextmenu-1.0.7.aar/e45d324994def7b075a07dbf17dba875/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yalantis/contextmenu/1.0.7/ebd45837a88ed45c1b7d1cba9a2f20876cf6f7ea/contextmenu-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
